@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704394800&semt=sph');
+    width: 100%;
+    height: max-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
+}
+.submain{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.content-div{
+    width: 50%;
+
+}
+.content-div h1{
+    font-size: 70px;
+    color: rgb(16,42,66);
+}
+.content-div p{
+    color: rgb(97,125,155);
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+.content-div button{
+    border-radius: 5px;
+    background-color: rgb(97,125,155);
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+}
+
+.content-div button:hover{
+    background-color: rgb(14, 97, 186);
+}
+
+img{
+    height: 85vh;
+    width: 250px; 
+}
+.navbar{
+    position: relative;
+    background-color: skyblue;
+    z-index: 2;
+    /* background-color: transparent; */
+    color: white;
+}
+.sub-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.sub-nav h2{
+    font-size: 40px;
+}
+.list1{
+    width: 400px;
+    list-style: none;
+    display: flex;
+    font-size: 23px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    /* position: fixed; */
+}
+.list-btn{
+    display: none;
+    font-size: 30px;
+}
+.signIn-btn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    border: none;
+    display: block;
+    transition: all 0.25s linear;
+}
+.signIn-btn:hover{
+    background-color: rgb(111, 107, 107);
+}
+.dropdown{
+    background-color: white;
+    box-shadow: 5px 5px 10px grey;
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    z-index: 3;
+    display: none;
+    padding: 15px;
+    border-radius: 7px;
+    transition: all 0.25s linear;
+}
+.show-dropdown{
+    display: block;
+}
+.inner-box p{
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+.sidebar{
+    position: fixed;
+  top: 0;
+  right: -30%;
+  width: 30%;
+  height: 100%;
+  z-index: 5;
+  background: white;
+  transition:  0.3s linear;
+  padding: 10px;
+  /* transform: translate(100%); */
+}
+.sidebar-show{
+    /* transform: translate(0); */
+    right: 0%;
+}
+.btn3{
+    font-size: 30px;
+    color: red;
+}
+.text1,.text2{
+    margin-top: 15px;
+}
+@media screen and (max-width:900px){
+    .content-div{
+        width: 100%;
+    }
+    .img-div{
+      display: none;
+    }
+    .list-btn{
+        display: block;
+        cursor: pointer;
+    }
+    .signIn-btn{
+        display: none;
+    }
+    .list1{display: none;}
+    .sub-nav{justify-content: space-between;
+    }
+    
+}
